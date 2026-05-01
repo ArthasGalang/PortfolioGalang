@@ -117,6 +117,7 @@ body{
   margin-left:24px;
   font-weight: 500;
   font-size: 0.95rem;
+  font-family: var(--font-heading);
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -177,6 +178,7 @@ body{
   font-weight: 400;
   line-height: 1.6;
   max-width: 500px;
+  font-family: var(--font-body);
 }
 
 .accent{color:var(--accent)}
@@ -214,7 +216,7 @@ body{
   box-shadow: 0 0 20px var(--accent-glow);
 }
 
-.stat strong{display:block;font-size:1.3rem;margin-bottom:4px}
+.stat strong{display:block;font-size:1.3rem;margin-bottom:4px;font-family: var(--font-heading)}
 
 /* About section specifics */
 .about-left{display:flex;gap:24px;align-items:flex-start}
@@ -491,16 +493,17 @@ body{
 /* Contact Card */
 .contact-card{
   display:flex;
+  flex-direction:column;
   gap:24px;
   background:linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(239, 68, 68, 0.03));
   padding:22px;
   border-radius:14px;
-  align-items:flex-start;
-  justify-content:space-between;
+  align-items:center;
+  text-align:center;
   border: 1px solid rgba(245, 158, 11, 0.15);
 }
 
-.contact-left{display:flex;gap:16px;align-items:center}
+.contact-left{display:flex;flex-direction:column;gap:16px;align-items:center;width:100%}
 
 .avatar.small{
   width:68px;
@@ -510,7 +513,7 @@ body{
 
 .contact-name h4{margin:0 0 6px;font-family: var(--font-heading)}
 
-.contact-right{flex:1;min-width:240px}
+.contact-right{width:100%;margin-top:16px}
 
 .contact-row{
   display:flex;

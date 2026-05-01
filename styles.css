@@ -68,7 +68,18 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{height:100%;font-family:var(--font-body)}
+
+/* Global Font Application - All Elements */
+body,html,div,section,article,main,header,footer,nav,aside,p,span,li,a,label,small,strong,em,blockquote,td,th,tr,table,thead,tbody,tfoot,input,textarea,select,button,.container,.section,.hero,.about-grid,.projects-grid,.skills-grid,.edu-grid,.about-left,.about-right,.hero-inner,.header-inner,.contact-card,.contact-left,.contact-right,.card-details,.exp-details,.stat,.skill-card,.edu-card,.exp-card,.copy-btn{
+  font-family:var(--font-body)
+}
+
+/* Global Font Application - Headings */
+h1,h2,h3,h4,h5,h6,.title,.subtitle,.logo,.nav a,.card h4,.exp-title h4,.contact-name h4,.edu-card h4,.stat strong,.skill-card strong{
+  font-family:var(--font-heading);
+  margin:0;
+}
 
 /* Enhanced Background with Subtle Pattern */
 html{
@@ -338,6 +349,7 @@ body{
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.5;
+  font-family: var(--font-body);
 }
 
 /* Education */
@@ -392,7 +404,8 @@ body{
   margin:0 0 12px;
   color:var(--muted);
   font-size:0.9rem;
-  line-height:1.5
+  line-height:1.5;
+  font-family: var(--font-body);
 }
 
 .card-details ul,.exp-details ul{
